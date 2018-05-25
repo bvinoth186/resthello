@@ -13,7 +13,7 @@ public class EmployeeController {
     public List<Employee> getEmployees() 
     {
 		List<Employee> employeesList = new ArrayList<Employee>();
-		employeesList.add(new Employee(1,"lokesh","gupta","howtodoinjava@gmail.com"));
+		employeesList.add(new Employee(1,"vinoth","kumar","vinoth186@gmail.com"));
 		return employeesList;
     }
 
