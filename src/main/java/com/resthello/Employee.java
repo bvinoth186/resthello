@@ -1,11 +1,13 @@
 package com.resthello;
 
+import org.springframework.data.annotation.Id;
+
 public class Employee {
 
 	public Employee() {
 		
 	}
-	public Employee(Integer id, String firstName, String lastName, String email) {
+	public Employee(String id, String firstName, String lastName, String email) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -13,15 +15,16 @@ public class Employee {
 		this.email = email;
 	}
 	
-	private Integer id;
+	@Id
+	private String  id;
 	private String firstName;
 	private String lastName;
 	private String email;
 	
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getFirstName() {
